@@ -40,7 +40,7 @@ public class LoginScreen {
 
         // Welcome Text
         label = new JLabel("Welcome to Judels Flights!");
-        label.setBounds(120, 40, 350, 30);
+        label.setBounds(120, 40, 350, 35);
         label.setFont(new Font("Tahoma", Font.BOLD, 26));
         panel.add(label);
 
@@ -58,6 +58,7 @@ public class LoginScreen {
 
         username = new JTextField();
         username.setBounds(150, 200, 200, 30);
+        GUI_Constants.Input(username);
         panel.add(username);
 
         //password input
@@ -68,10 +69,13 @@ public class LoginScreen {
 
         password = new JPasswordField();
         password.setBounds(150, 250, 200, 30);
+        GUI_Constants.Input(password);
+        password.setEchoChar('*');
         panel.add(password);
 
         login = new JButton("Login");
         login.setBounds(200, 300, 100, 30);
+        GUI_Constants.Button(login);
         panel.add(login);
     }
     public void show(){
