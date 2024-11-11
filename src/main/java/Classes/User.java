@@ -5,13 +5,14 @@ public class User {
     private String username;
     private String password;
     //other personal info
-    private int id;
+    private String id;
     private String name;
     private String surname;
     private int age;
     private String email;
+    private String role;
 
-    public User(String username, String password, int id, String name, String surname, int age, String email) {
+    public User(String username, String password,String id, String name, String surname, int age, String email, String role) {
         this.username = username;
         this.password = password;
         this.id = id;
@@ -19,6 +20,7 @@ public class User {
         this.surname = surname;
         this.age = age;
         this.email = email;
+        this.role = role;
     }
 
     public String getUsername() {
@@ -37,11 +39,11 @@ public class User {
         this.password = password;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -75,6 +77,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
 
