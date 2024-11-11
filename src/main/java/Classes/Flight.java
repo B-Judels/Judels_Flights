@@ -47,3 +47,43 @@ public class Flight {
         this.seats = seats;
     }
 }
+
+class Johannesburg extends Flight{
+    public Johannesburg(int flightNumer, String Destination, int departureTime, int seats) {
+        super(flightNumer, Destination, departureTime, seats);
+        flightNumer = 1234;
+        Destination = "Johannesburg";
+        departureTime = 8;
+        seats = 40;
+    }
+}
+
+class CapeTown extends Flight{
+    public CapeTown(int flightNumer, String Destination, int departureTime, int seats) {
+        super(flightNumer, Destination, departureTime, seats);
+        flightNumer = 3645;
+        Destination = "CapeTown";
+        departureTime = 18;
+        seats = 80;
+    }
+}
+
+class George extends Flight{
+    public George(int flightNumer, String Destination, int departureTime, int seats) {
+        super(flightNumer, Destination, departureTime, seats);
+        flightNumer = 7896;
+        Destination = "George";
+        departureTime = 16;
+        seats = 40;
+    }
+}
+
+class Bloemfontein extends Flight{
+    public Bloemfontein(int flightNumer, String Destination, int departureTime, int seats) {
+        super(flightNumer, Destination, departureTime, seats);
+        flightNumer = 2696;
+        Destination = "Bloemfontein";
+        departureTime = 11;
+        seats = 40;
+    }
+}
